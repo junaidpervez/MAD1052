@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE LITTLE THINGS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="AddToBasket.js"></script>
+</head>    
+<body>
+    <header>
+        <div class="center-title">
+            <h1>THE LITTLE THINGS</h1>
+        </div>  
+        <div class ="cart-icon"onclick="openCartDetails()">
+            <button class="cart-button" onclick="cart">Cart 🛒<span class="cart-value" id="cart-count">0</span></button>  
+        </div>
+    </header>
+<div class="cake-container APPLE CAKE">
+    <img src="https://tse2.mm.bing.net/th?id=OIP.bSledJaCvP02a2nS2EjX_AHaLG&pid=Api&P=0&h=180" style="width:247px;height: 250px;">
+    <h3>PINEAPPLE CAKE</h3>
+    <p>Added Pineapple dry fruit mixed</p>
+    <p>15 $</p>
+    <button onclick="AddToBasket('PINEAPPLE CAKE',15)">Add To Basket</button>
+</div>
+<div class="cake-container VELVET CAKE">
+    <img src="https://www.modernhoney.com/wp-content/uploads/2017/12/Red-Velvet-Cake-12.jpg" style="width:247px;height:250px;">
+    <h3>RED VELVET CAKE</h3>
+    <P>Added Red food colouring</P>
+    <p>13 $</p>
+    <button onclick="AddToBasket('RED VELVET CAKE',13)">Add To Basket</button>
+</div>
+<div class="cake-container FOREST CAKE">
+    <img src="http://d3cizcpymoenau.cloudfront.net/images/legacy/6138/SFS_Black-Forest-Cake_article.jpg" style="width:247px;height:250px;">
+    <h3>BLACK FOREST CAKE</h3>
+    <P>Added cans pitted sour</P>
+    <p>10 $</p>
+    <button onclick="AddToBasket('BLACK FOREST CAKE',10)">Add To Basket</button>
+</div>
+<div class="cake-container FROAST CAKE">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.6CLy3HY0fp6bNQ-88nEuqwAAAA&pid=Api&P=0&h=180" style="width:247px;height:250px;">
+    <h3>APPLE FROAST CAKE</h3>
+    <P>Added kashmiri apples</P>
+    <p>25 $</p>
+    <button onclick="AddToBasket('APPLE FROAST CAKE',25)">Add To Basket</button>
+</div>
+<div class="cake-container FOREST CAKE">
+    <img src="https://www.warmoven.in/media/catalog/product/cache/4e14bcb566d25893ae7201d4dbdc22fd/image/181ec29/white-forest-cake.jpeg" style="width:247px;height:250px;">
+    <h3>WHITE FOREST CAKE</h3>
+    <P>Added White Cans Pitted Sour</P>
+    <p>8 $</p>
+    <button onclick="AddToBasket('WHITE FOREST CAKE',8)">Add To Basket</button>
+</div>
+<div id="popout" class="popout">
+    <div class="popout-content">
+        <span class="close" onclick="closePopout()">&times;</span>
+        <h2>Cart Details</h2>
+        <p>Cart Contents:</p>
+        <pre id="cart-details"></pre>
+        <div class="checkout-button">
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
